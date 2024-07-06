@@ -172,6 +172,10 @@ h2, h3, h4 {
     transition: all .2s ease 0s;
 }
 
+.services__item:hover {
+    opacity: .9;
+}
+
 .services__item h2 {
     font-family: Work Sans, Arial, sans-serif;
     font-size: 1.625em;
@@ -221,7 +225,7 @@ h2, h3, h4 {
     font-weight: 400;
     letter-spacing: .04em;
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .services__item .style-select select option {
@@ -360,6 +364,27 @@ h2, h3, h4 {
     max-width: 100%;
 }
 
+.brands__logos a path {
+    transition: all .2s ease 0s;
+    fill: hsla(0, 0%, 67%, .7);
+}
+
+.brands__logos .clinicloud img, .brands__logos .feegow img, .brands__logos .gipo img, .brands__logos .jameda img, .brands__logos .mydr img, .brands__logos .tuotempo img {
+    transition: all .2s ease 0s;
+    filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    -webkit-filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    opacity: .55;
+}
+
+.brands__logos .clinicloud:hover img, .brands__logos .feegow:hover img, .brands__logos .gipo:hover img, .brands__logos .jameda:hover img, .brands__logos .mydr:hover img, .brands__logos .tuotempo:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+.brands__logos a:hover path {
+    fill: #00bfa5;
+}
+
 .section__offices {
     width: 55%;
     text-align: center;
@@ -400,6 +425,10 @@ h2, h3, h4 {
     transition: box-shadow .2s ease 0s;
     text-decoration: none;
 }
+
+.office__inner:hover {
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, .13);
+}
 .office__image img {
     display: block;
     margin: 0 auto;
@@ -432,6 +461,11 @@ h2, h3, h4 {
     text-decoration: none !important;
     text-transform: uppercase;
     transition: all .2s ease 0s;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #1662c6;
 }
 
 
@@ -475,6 +509,10 @@ h2, h3, h4 {
 .main-footer p a {
     text-decoration: none;
     color: #3d83df;
+}
+
+.main-footer p a:hover {
+    text-decoration: underline;
 }
 
 .hamburger {
